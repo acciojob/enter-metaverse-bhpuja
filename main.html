@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Metaverse</title>
+    <script>
+        // Function to handle the button click and change the text
+        function enterMetaverse() {
+            // Get the paragraph element by its ID
+            var statusParagraph = document.getElementById("status");
+            
+            // Create a new h1 element
+            var h1 = document.createElement("h1");
+            
+            // Set the text of the h1 element
+            h1.textContent = "Entered Metaverse";
+            
+            // Replace the content of the status paragraph with the new h1 element
+            statusParagraph.innerHTML = "";
+            statusParagraph.appendChild(h1);
+        }
+    </script>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <p id="status">Enter the Metaverse</p>
+    <button id="enterBtn" onclick="enterMetaverse()">Enter</button>
 
 </body>
-
 </html>
